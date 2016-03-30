@@ -9,8 +9,7 @@ enableProdMode();
 @App({
   template: '<ion-nav [root]="rootPage"></ion-nav>',
   config: {
-    backButtonText: 'Vrátit se',
-    mode: 'md'
+    //mode: 'wp'
   },
 })
 export class MyApp {
