@@ -1,0 +1,44 @@
+{
+  "speakers": [
+    {
+      "name": "Igor Minár",
+      "title": "Angular team lead at Google",
+      "picture": "http://www.ngparty.cz/ngBigParty-II/assets/images/speakers/igor-minar.png"
+    },
+    {
+      "name": "Martin Hochel",
+      "title": "Software engineer at EmbedIT",
+      "picture": "http://www.ngparty.cz/ngBigParty-II/assets/images/speakers/martin-hochel.jpg"
+    },
+    {
+      "name": "Mario Vejlupek",
+      "title": "Software engineer at EmbedIT",
+      "picture": "http://www.ngparty.cz/ngBigParty-II/assets/images/speakers/mario-vejlupek.jpg"
+    },
+    {
+      "name": "Viliam Elischer",
+      "title": "Software engineer at ZOOM international",
+      "picture": "http://www.ngparty.cz/ngBigParty-II/assets/images/speakers/viliam-elischer.jpg"
+    },
+    {
+      "name": "Maxim Salnikov",
+      "title": "UI Engineer at ForgeRock / #GDE",
+      "picture": "http://www.ngparty.cz/ngBigParty-II/assets/images/speakers/maxim-salnikov.png"
+    },
+    {
+      "name": "David Amend",
+      "title": "Solution Architect at BNP Paribas International",
+      "picture": "http://www.ngparty.cz/ngBigParty-II/assets/images/speakers/david-amend.jpg"
+    },
+    {
+      "name": "Julian Steiner",
+      "title": "Progress/Telerik",
+      "picture": "http://www.ngparty.cz/ngBigParty-II/assets/images/speakers/julian-steiner.jpg"
+    },
+    {
+      "name": "Christoffer Noring",
+      "title": "Software Developer, Blogger, Educator / #GDE",
+      "picture": "http://www.ngparty.cz/ngBigParty-II/assets/images/speakers/christoffer-noring.jpg"
+    }
+  ]
+}

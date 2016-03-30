@@ -1,37 +1,23 @@
 import {Page} from 'ionic-angular';
-import {FIREBASE_PROVIDERS, defaultFirebase, AngularFire} from 'angularfire2';
-import {Observable} from 'rxjs/Observable';
-
-import {FirebaseRef} from 'angularfire2';
-import {Inject} from 'angular2/core';
+import {Speaker} from '../../models/speaker-model';
+import {SpeakerService} from '../../providers/speaker-service';
+import {OnInit} from 'angular2/core';
 
 @Page({
   templateUrl: 'build/pages/page1/page1.html',
-  providers: [FIREBASE_PROVIDERS, defaultFirebase('https://futureapp-prague.firebaseio.com/posts/')]
+  providers: [SpeakerService]
 })
-export class Page1 {
-  questions: Observable<any>;
-  postsRef: Firebase;
+export class Page1 implements OnInit {
 
-  constructor(af: AngularFire, @Inject(FirebaseRef) ref:Firebase) {
-    this.questions = af.list('');
-    this.postsRef = ref;
+  speakers: Speaker[];
+
+  ngOnInit() { this.getSpeakers(); }
+
+  constructor(private _speakerService: SpeakerService) {};
+
+  getSpeakers() {
+    this._speakerService.getSpeakers()
+      .subscribe(speakers => this.speakers = speakers);
   }
-
-  onKeyUp($event, nameInput, messageInput) {
-    if ($event.which === 13 && messageInput.value) {
-      this.createPost(nameInput, messageInput);
-    }
-  };
-
-  createPost(nameInput, messageInput) {
-
-    this.postsRef.push({
-      name: nameInput.value,
-      message: messageInput.value
-    });
-
-    messageInput.value = null;
-  };
 
 }
